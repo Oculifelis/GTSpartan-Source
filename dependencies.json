@@ -1,0 +1,22 @@
+[
+  {
+    "file": "gtceu-1.20.1-7.5.3.jar",
+    "url": "https://cdn.modrinth.com/data/7tG215v7/versions/yLwvjuvy/gtceu-1.20.1-7.5.3.jar",
+    "sha512": "0b4643f3cd1b68d2afb043a461be646b5c6c1cc04f4a3fddde3baae7e4ce2b81265453cc4794736141d65287a2b109995dd202c3d6de618f229d1f8d32e34ce8"
+  },
+  {
+    "file": "ldlib-forge-1.20.1-1.0.52.jar",
+    "url": "https://cdn.modrinth.com/data/B1CBVXHX/versions/NzNZILgs/ldlib-forge-1.20.1-1.0.52.jar",
+    "sha512": "b79a3da49e0036884577602434bac194a1c86f2ff6433fb6f86b8183d9219ebf59eac597314e28422f2a1c8ca283a535346aa3f194cafc050d3e53d2b8e72269"
+  },
+  {
+    "file": "configuration-forge-1.20.1-3.1.0.jar",
+    "url": "https://cdn.modrinth.com/data/3WjjSM5O/versions/h7CBg2Oe/configuration-forge-1.20.1-3.1.0.jar",
+    "sha512": "444f4e502fec76208a4d1606bf2aedab3999e13171033720ea7fe56a6e2f28c3c817badc5592da17a4925a63e3502155c37ed0a4de2d2789106c72541ca99edf"
+  },
+  {
+    "file": "SpartanWeaponry-1.20.1-forge-3.2.1-all.jar",
+    "url": "https://cdn.modrinth.com/data/icU5P2Mk/versions/4U6gwadt/SpartanWeaponry-1.20.1-forge-3.2.1-all.jar",
+    "sha512": "3dd17f56dea15a1dd87b433612876fd0ebb426eca5dc2311f5cd7098cad549243ac25fe872bae28b0a18f0d7ae4a35070df2ec5c3be392cb916b8fbb44b38dfb"
+  }
+]

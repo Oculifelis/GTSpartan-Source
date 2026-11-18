@@ -1,0 +1,373 @@
+{
+  "checked": "2026-11-12",
+  "by": "Oculifelis",
+  "query": "almanac.py builds ^gtceu$ --mc 1.20.1 --full",
+  "builds": [
+    {
+      "build": "jar:d6560d8b6958",
+      "mod": "gtceu",
+      "ver": "7.5.3",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-7.5.3.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:Crafted Madness- Modern Era(1)",
+        "instance:Flat Factory [F2]",
+        "instance:GTCPM++ TESTING",
+        "instance:GTCPM2",
+        "instance:GTCPME",
+        "instance:Gregged In Abyss"
+      ]
+    },
+    {
+      "build": "jar:c2ccedc66540",
+      "mod": "gtceu",
+      "ver": "1.6.4",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-1.6.4.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:GregTech- Overvolt",
+        "instance:M&M V2",
+        "instance:Star Technology(1)"
+      ]
+    },
+    {
+      "build": "jar:e7b5239e1fed",
+      "mod": "gtceu",
+      "ver": "1.4.4",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-1.4.4.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:GregTech-Leisure-1.4.5.0",
+        "instance:NeoGreg"
+      ]
+    },
+    {
+      "build": "jar:f8b2f5e40ad4",
+      "mod": "gtceu",
+      "ver": "7.5.2",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-7.5.2.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:Community Porn",
+        "instance:GT- Voyager 0.3 working ver 5",
+        "instance:GT- Voyager-v0.1.3a",
+        "instance:GTCPM++",
+        "instance:Greg-E",
+        "instance:Moni&ProjectE&More"
+      ]
+    },
+    {
+      "build": "jar:9fb847adc0d2",
+      "mod": "gtceu",
+      "ver": "1.7.0b",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-st-1.20.1-1.7.0b.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:Star Technology(2)"
+      ]
+    },
+    {
+      "build": "jar:b17fc8cd5a65",
+      "mod": "gtceu",
+      "ver": "7.5.1",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-7.5.1.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:Ars Gregica",
+        "instance:GregTech Gastronomic Arcana",
+        "instance:Valoric Industries"
+      ]
+    },
+    {
+      "build": "jar:d725a9322bbb",
+      "mod": "gtceu",
+      "ver": "1.5.4",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-1.5.4.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:GregTech-New Beginnings(2)",
+        "instance:MagicGreg- Arcane Breakthrough(1)",
+        "instance:MagicGreg- Arcane Breakthrough"
+      ]
+    },
+    {
+      "build": "jar:8450217d1aaa",
+      "mod": "gtceu",
+      "ver": "7.1.4",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-7.1.4.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:Cosmic Frontiers",
+        "instance:Create- New Horizon(1)",
+        "instance:Epoch- Genesis"
+      ]
+    },
+    {
+      "build": "jar:597410025499",
+      "mod": "gtceu",
+      "ver": "7.4.1",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-7.4.1.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:GTCPM Extended",
+        "instance:GTCPMWM",
+        "instance:Greg's Curse",
+        "instance:GregTech- Flatter Than Ever (GT-FTE)",
+        "instance:Infinite Horizons - Modded Superflat Survival",
+        "instance:Lapana(1)"
+      ]
+    },
+    {
+      "build": "jar:848cf1487464",
+      "mod": "gtceu",
+      "ver": "8.2.0",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-8.2.0.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:GregTech Community Pack Modern"
+      ]
+    },
+    {
+      "build": "jar:e3ed562c87f6",
+      "mod": "gtceu",
+      "ver": "7.4.0",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-7.4.0.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:Congregation - expert Gregtech pack",
+        "instance:Phoenix Forge Technologies"
+      ]
+    },
+    {
+      "build": "jar:fc0a615f449c",
+      "mod": "gtceu",
+      "ver": "7.2.1",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-7.2.1.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:Crafted Madness- Modern Era",
+        "instance:Greate",
+        "instance:TerraFirmaGreg-Modern"
+      ]
+    },
+    {
+      "build": "jar:526c35562957",
+      "mod": "gtceu",
+      "ver": "7.3.0",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-7.3.0.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:Gregtech Reverberating Nexus"
+      ]
+    },
+    {
+      "build": "jar:e93eb36b3403",
+      "mod": "gtceu",
+      "ver": "7.2.0",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-7.2.0.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:All the Mods 9 - ATM9(4)",
+        "instance:GregTech.Odyssey-0.4.9.2-beta",
+        "instance:Tinkering With Greg"
+      ]
+    },
+    {
+      "build": "jar:da7418b7caa1",
+      "mod": "gtceu",
+      "ver": "7.0.2",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-7.0.2.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:GregTech Community Pack Modern(4)"
+      ]
+    },
+    {
+      "build": "jar:e1b471e61058",
+      "mod": "gtceu",
+      "ver": "1.6.3",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-1.6.3.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:GregTech A New Generation",
+        "instance:GregTech Community Pack Semen",
+        "instance:GregTech-New Beginnings(1)",
+        "instance:Sky of Grind(1)"
+      ]
+    },
+    {
+      "build": "jar:c776d64216da",
+      "mod": "gtceu",
+      "ver": "1.6.1",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-1.6.1.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:Community Pack Malum",
+        "instance:Cosmic Frontiers(2)"
+      ]
+    },
+    {
+      "build": "jar:8d188ebcc677",
+      "mod": "gtceu",
+      "ver": "1.4.6",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-1.4.6.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:Cosmic Frontiers(1)",
+        "instance:Create- New Horizon"
+      ]
+    },
+    {
+      "build": "jar:ea4a358a0f2d",
+      "mod": "gtceu",
+      "ver": "1.6.2",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-1.6.2.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:Mystic's Monstrosity",
+        "instance:Sky of Grind"
+      ]
+    },
+    {
+      "build": "jar:3ed4f52d4711",
+      "mod": "gtceu",
+      "ver": "1.2.0.a",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-1.2.0.a.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:All the Mods 9 - ATM9",
+        "instance:Securite- Gregified"
+      ]
+    },
+    {
+      "build": "jar:bb3c48d1f16a",
+      "mod": "gtceu",
+      "ver": "1.1.4",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-1.1.4.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:Star Techology Lite"
+      ]
+    },
+    {
+      "build": "jar:c2591c834415",
+      "mod": "gtceu",
+      "ver": "1.2.2.a",
+      "mc": "1.20.1",
+      "loader": "forge",
+      "kind": "jar",
+      "depth": "full",
+      "file": "gtceu-1.20.1-1.2.2.a.jar",
+      "license": "LGPL-3.0 license",
+      "mods": "gtceu",
+      "places": [
+        "instance:GregFactory Sky"
+      ]
+    }
+  ]
+}

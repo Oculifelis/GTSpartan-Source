@@ -1,0 +1,86 @@
+plugins {
+    id 'eclipse'
+    id 'idea'
+    id 'net.minecraftforge.gradle' version '6.0.54'
+}
+group = 'dev.oculifelis.gtspartan'
+version = "${mod_version}+1.20.1-forge"
+base.archivesName = 'gt_spartan'
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+sourceSets {
+    gametest {
+        compileClasspath += sourceSets.main.output
+        runtimeClasspath += sourceSets.main.output
+    }
+}
+configurations {
+    gametestImplementation.extendsFrom implementation
+    gametestRuntimeOnly.extendsFrom runtimeOnly
+}
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+    copyIdeResources = true
+    runs {
+        configureEach {
+            property 'forge.logging.console.level', 'info'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+            jvmArgs '-Xmx4G', '-XX:ActiveProcessorCount=4', '-Djava.awt.headless=true'
+            args '-mixin.config=gt_spartan.mixins.json'
+            mods { gt_spartan { source sourceSets.main } }
+        }
+        client {
+            workingDirectory project.file('run-client-check')
+            // dev-only client checks (ClientChecks) from the gametest source set; never in the release jar
+            mods { gt_spartan_test { source sourceSets.gametest } }
+        }
+        gameTestServer {
+            workingDirectory project.file('run-gametest')
+            property 'forge.enabledGameTestNamespaces', 'gt_spartan_test'
+            mods { gt_spartan_test { source sourceSets.gametest } }
+        }
+    }
+}
+repositories {
+    flatDir { dirs 'libs', 'libs/extra' }
+}
+// Windows upper-cases environment names, so ORG_GRADLE_PROJECT_withKubeJS can't reach Gradle; scripts set these instead.
+ext.withKubeJS = project.hasProperty('withKubeJS') || System.getenv('GTS_WITH_KUBEJS') != null
+ext.withExtra = project.hasProperty('extra') || System.getenv('GTS_EXTRA') != null
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-47.4.28'
+    implementation fg.deobf('local:SpartanWeaponry:1.20.1-forge-3.2.1-all')
+    implementation fg.deobf('local:gtceu:1.20.1-7.5.3')
+    implementation fg.deobf('local:ldlib-forge:1.20.1-1.0.52')
+    implementation fg.deobf('local:configuration-forge:1.20.1-3.1.0')
+    // Runtime-only test mods in the gitignored libs/extra (copied from local instances, nested jars that touch
+    // Minecraft extracted so they can be deobfed). -Pextra loads all of them, -PwithKubeJS only KubeJS and its deps.
+    fileTree('libs/extra').matching { include '*.jar' }.files.sort { it.name }.each { f ->
+        def base = f.name - '.jar'
+        def kjs = base ==~ /(kubejs|rhino|architectury)-.*/
+        if (!withExtra && !(kjs && withKubeJS)) return
+        def m = base =~ /^(.+?)-(\d.*)$/
+        if (m.matches()) runtimeOnly fg.deobf("local:${m.group(1)}:${m.group(2)}")
+    }
+}
+// -PwithKubeJS: the GameTest run gets the check script that KubeJsTests verifies; without it the script is removed.
+tasks.matching { it.name in ['runGameTestServer', 'runClient'] }.configureEach {
+    doFirst {
+        def dir = project.file(it.name == 'runClient' ? 'run-client-check' : 'run-gametest')
+        if (withKubeJS) {
+            project.copy { from 'src/gametest/kubejs'; into new File(dir, 'kubejs') }
+        } else {
+            project.delete(new File(dir, 'kubejs/server_scripts/gtstest.js'))
+        }
+    }
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.named('jar', Jar).configure {
+    from([file('LICENSE'), file('NOTICE.md')]) { into 'META-INF' }
+    manifest {
+        attributes(['Implementation-Vendor': 'Oculifelis', 'Implementation-Version': project.version.toString(),
+                    'MixinConfigs': 'gt_spartan.mixins.json'])
+    }
+    finalizedBy 'reobfJar'
+}
