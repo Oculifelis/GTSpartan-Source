@@ -4,7 +4,7 @@ license="MIT"
 [[mods]]
 modId="gt_spartan"
 version="${file.jarVersion}"
-displayName="GT Spartan"
+displayName="GT Spartan Modern"
 authors="Oculifelis"
 description='''Spartan weapons for GregTech metals, with plate and rod crafting.'''
 [[dependencies.gt_spartan]]
